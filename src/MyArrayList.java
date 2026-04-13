@@ -1,3 +1,4 @@
+/* Implements a dynamic array-based list */
 public class MyArrayList<T> implements MyList<T> {
 
     // Private instance variables
@@ -169,7 +170,8 @@ public class MyArrayList<T> implements MyList<T> {
         if (size == 0) {
             return "[]";
         }
-        StringBuilder sb = new StringBuilder("[");
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
         for (int i = 0; i < size; i++) {
             sb.append(o[i]).append(", ");
             }
